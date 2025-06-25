@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+         }
+         body{
+            background: violet;
+         }
+         .container{
+            border: 2px solid black;
+            width: 400px;
+            height: 500px;
+            margin: 20px auto;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: left;
+            flex-wrap: wrap;
+            align-items: left;
+            align-content: start;
+         }
+         .container .child{
+            width: 50px;
+            height: 50px;
+            background: blue;
+            margin: 5px;
+            text-align: center;
+         }
+         .special{
+            order: 1;
+            /* align-self: flex-end; if align - content is active this will not work  */
+         }
+         .special-two{
+            order: 2;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child special">3</div> 
+        <!-- in order all is default 0 -->
+        <div class="child special-two">4</div>
+        <div class="child">5</div>
+    </div>
+</body>
+</html>
