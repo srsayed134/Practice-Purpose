@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & after</title>
+    <style>
+        body{
+            height: 100vh;
+            /* border: 3px solid black; */
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+            font-size: 2em;
+            
+        }
+        p{
+            border: 2px solid black;
+            position: relative;
+        }
+        p::before {
+            content: "Before ";
+            color: red;
+            font-weight: 700;
+            background-color: aqua;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        p::after {
+            content: "Before ";
+            color: red;
+            font-weight: 700;
+            background-color: aqua;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        div:not(.content) {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Here is some content</p>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, atque enim temporibus maiores deserunt, qui officiis delectus quidem eum vel sapiente magnam voluptates facilis inventore culpa ab excepturi ullam sed.
+    </div>
+    <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem qui, odit, sint impedit esse ea aliquid vero exercitationem laborum quidem placeat, eius assumenda praesentium veniam at dolor! Velit, soluta laboriosam.
+    </div>
+</body>
+</html>
