@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root{
+    --main-color: #dead5f;
+    --primary-color: #312e2e;
+}
+
+/* Utilities */
+
+button{
+    background-color: var(--main-color);
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #100e0f;
+}
+
+/* Navigation  */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 15px;
+    font-family: sans-serif;
+    /* border: 3px solid white; */
+}
+li{
+    display: inline;
+    list-style: none;
+    /* border: 1px solid white; */
+}
+li a {
+    text-decoration: none;
+    /* padding: 0 10px; */
+    color: white;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* Nav end  */
+
+/* Header start  */
+
+.header{
+    background-image: url(Images/pexels-nao-triponez-129207.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    /* Flexbox design  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    
+}
+.main-headings{
+    position: absolute;
+    top: 7rem;
+    font-size: 4rem;
+    word-spacing: 10px;
+    /* border: 3px solid white; */
+}
+
+.primary-headings{
+    position: absolute;
+    bottom: 4rem;
+    word-spacing: 10px;
+}
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    /* margin-top: 40px; */
+    background: transparent;
+    background: var(--main-color);
+    margin-bottom: -20px;
+}
+
+/* Stat second section  */
+
+#our-story{
+    /* height: 100vh; */
+    margin-top: 10%;
+    /* margin-bottom: 10%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+     /* border: 2px solid green; */
+}
+
+/* Second ----left */
+.img-ourStory-container{
+    /* border: 2px solid red; */
+}
+.img{
+  width: 400px;
+  height: 400px;
+  background-image: url(Images/pexels-chitokan-2183027-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Second ----right */
+.section-content{
+   /* border: 2px solid red; */
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-family: "PlayFair Display", serif;
+    font-size: 4rem;
+    color: white;
+    transform: translateX(-100px);
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background: white;
+    transform: translateX(-120px);
+}
+.section-content p{
+    max-width: 500px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+/* End section end  */
+
+/* Coffee - Container start here  */
+
+.coffee-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+.content-section p{
+    max-width: 500px;
+    color: white;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+.img-2{
+    width: 400px;
+    height: 400px;
+}
+.title-two{
+    font-size: 3rem;
+    color: white;
+    font-family: "PlayFair Display", serif;
+}
