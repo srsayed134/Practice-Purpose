@@ -176,3 +176,147 @@ li a:hover{
     color: white;
     font-family: "PlayFair Display", serif;
 }
+
+/* Coffe container end here */
+
+/* Prpducts start here  */
+.products{
+    margin-top: 7rem;
+}
+.title-three{
+    font-size: 4rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    /* border: 2px solid var(--main-color); */
+}
+.img-one{
+    background: url(Images/1.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-two{
+    background: url(Images/2.png);
+    background-position: center;
+    background-size: cover;
+    left: 110px;
+}
+.img-three{
+    background: url(Images/3.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-title{
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+.card .items p{
+    color: white;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+/* Products end here */
+
+/* Footer star */
+footer{
+    height: 50vh;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+footer .container{
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+footer .heading-info{
+    margin-bottom: 20px;
+}
+footer p {
+    line-height: 25px;
+}
+span{
+    color: var(--main-color);
+}
+
+
+.para{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Footer end  */
+
+/* Responsive*/
+@media only screen and (max-width:768px){ 
+    .main-headings, 
+    .primary-headings{
+   font-size: 2.5rem;
+}
+#our-story{
+    text-align: center;
+
+}
+#our-story .title{
+    transform: translateX(50px);
+}
+#our-story .line{
+    display: none;
+}
+.content-section{
+    text-align: center;
+}
+#our-story .img-ourStory-container.img{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.coffee-container .img-2{
+    margin-top: 5rem;
+    /* width: 70%; */
+}
+.title-two{
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+#our-story .section-content p{
+    margin: 20px;
+    padding: 0 10px;  
+}
+#our-story .section-content .title-style .title{
+    margin: 0 20px 0 60px;
+}
+
+}
