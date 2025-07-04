@@ -1,8 +1,5 @@
-let name = "Sayed";
-let whatDoYouWannaBecomeInYourLife = "programmer";
-let gender = "Male";
-let twitterHandle = "srsayed134"
-console.log(name)
-console.log(whatDoYouWannaBecomeInYourLife)
-console.log(gender)
-console.log(twitterHandle)
+let isJsProgrammingLanguage = true;
+let isJsHard = false;
+let favNumb = 7;
+let add = favNumb + undefined;
+console.log(add)
