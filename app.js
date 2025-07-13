@@ -1,8 +1,6 @@
-const  favSingers = ["KK", "Adnan sami", "Mohit cuhan"];
-const actors = ["Sharukh khan", "Amir khan", "Hrittik"]
-console.log(favSingers)
-console.log(actors);
-
-const concat = favSingers.concat(actors);
-
-console.log(favSingers.includes("kK"))
+ const person = {
+    fistName: "Sayedur",
+    lastName: "Rahman",
+    favMovie: ["Jhon whick", "Pk", "3 idiots"]
+ };
+ console.log(person.favMovie[1])
