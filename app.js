@@ -1,8 +1,8 @@
 const  favSingers = ["KK", "Adnan sami", "Mohit cuhan"];
+const actors = ["Sharukh khan", "Amir khan", "Hrittik"]
+console.log(favSingers)
+console.log(actors);
 
-console.log(favSingers[0]);
-const favNumbers = [7, 23, 59, 71];
+const concat = favSingers.concat(actors);
 
-const mixedArr = ["name", ["others", "array"], 123, false];
-
-console.log(mixedArr[3])
+console.log(favSingers.includes("kK"))
