@@ -1,6 +1,10 @@
- const person = {
-    fistName: "Sayedur",
-    lastName: "Rahman",
-    favMovie: ["Jhon whick", "Pk", "3 idiots"]
- };
- console.log(person.favMovie[1])
+function showCallFunc (fn){
+  const value = 10;
+  fn(value)
+}
+
+function fn(val){
+    console.log(val)
+}
+
+showCallFunc(fn);
