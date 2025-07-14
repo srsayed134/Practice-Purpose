@@ -1,9 +1,13 @@
-console.log(`The quick
-  brown fox
-  jumps fox
-  the lazy dog`);
+let arr = [1,2,3];
+let arr2 = [4,5];
+let clone = [...arr , ...arr2]
+console.log(clone);
 
-let firstName = "Sayedur";
-let lastName = "Rahman";
+const user = {
+  name: "Gustabo",
+  id: 9830,
+}
 
-console.log(`hey, i am ${firstName} ${lastName}`)
+let userClone = {...user};
+
+console.log(userClone.id)
