@@ -1,10 +1,3 @@
-function showCallFunc (fn){
-  const value = 10;
-  fn(value)
-}
-
-function fn(val){
-    console.log(val)
-}
-
-showCallFunc(fn);
+setTimeout (() => {
+  console.log(`This function will be executed after 3 secods`)
+}, 3000);

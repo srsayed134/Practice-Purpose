@@ -1,0 +1,13 @@
+{
+    "name": "Sayed",
+    "age": 24,
+    "email": "sayed@gmail.com",
+    "isMember": true,
+    "hobbies": ["Codding", "Wathching movie", "Gaming", "Reading"],
+    "address": {
+        "city": "New york",
+        "postCode": "3500",
+        "road": "new caloin road",
+        "house": "19/5"
+    }
+}
