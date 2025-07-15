@@ -1,13 +1,14 @@
-let arr = [1,2,3];
-let arr2 = [4,5];
-let clone = [...arr , ...arr2]
-console.log(clone);
+let products = [
+  {name: "Checkers", catagory: "Toys"},
+  {name: "Harry potter", catagory: "Books"},
+  {name: "iphone", catagory: "Electronics"},
+  {name: "Learn PHP", catagory: "Books"},
+  {name: "Doremon", catagory: "Comics"},
+]
 
-const user = {
-  name: "Gustabo",
-  id: 9830,
-}
+const bookFrequency = products.reduce((book, product) => {
+  book[product] = (book[product] || 0 + 1)
+  return book
+}, {});
 
-let userClone = {...user};
-
-console.log(userClone.id)
+console.log(bookFrequency)
