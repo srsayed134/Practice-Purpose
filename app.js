@@ -1,13 +1,18 @@
-let container = document.querySelector(".container");
-container.style.height = "400px"; 
-container.style.backgroundColor = "teal"
+//creat element
+//appendChild
+//append
+//prepend
+//insertBefore
 
-let h1Color = document.querySelector("h2");
-h1Color.style.color = "skyblue"
+//cathch first ul
+const firstUl = document.querySelector('ul')
+//create new li
+const newLi = document.createElement("li");
+//add text to newLi
+newLi.textContent = 5;
+//append newLi to firstUl
+firstUl.appendChild(newLi);
 
-let para = document.querySelector(".sub-headings");
-para.style.fontFamily = "sans-serif"
-para.style.color = "white"
-
-let btn = document.querySelector(".btn");
-btn.style.color = "white"
+//catch first li
+const firstLi = document.querySelector("li");
+firstUl.insertBefore(newLi, firstLi)
