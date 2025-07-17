@@ -1,11 +1,2 @@
-const firstElement = document.querySelector(".first");
-
-console.log(firstElement.innerText);
-
-const secondElement = document.querySelector(".second");
-
-console.log(secondElement.textContent);
-
-const thirdElement = document.querySelector(".third");
-
-console.log(thirdElement.innerHTML);
+const h1 = document.querySelector("h1")
+console.log(h1.style.color = "teal")
