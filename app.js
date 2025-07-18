@@ -1,18 +1,16 @@
-//creat element
-//appendChild
-//append
-//prepend
-//insertBefore
+const click = document.querySelector(".click");
 
-//cathch first ul
-const firstUl = document.querySelector('ul')
-//create new li
-const newLi = document.createElement("li");
-//add text to newLi
-newLi.textContent = 5;
-//append newLi to firstUl
-firstUl.appendChild(newLi);
+click.addEventListener("click", () => {
+    click.classList.toggle("red")
+})
 
-//catch first li
-const firstLi = document.querySelector("li");
-firstUl.insertBefore(newLi, firstLi)
+const contextmenu = document.querySelector(".contextmenu");
+
+contextmenu.addEventListener("contextmenu", ()=>{
+    contextmenu.classList.toggle("blue")
+})
+
+const dblclick = document.querySelector(".dblclick");
+dblclick.addEventListener("dblclick", () => {
+    dblclick.classList.toggle("teal")
+})
