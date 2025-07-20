@@ -1,5 +1,8 @@
-const clsText = document.querySelector(".cls")
-console.log(clsText.innerText);
+const twittera = document.querySelector(".twittera")
+console.log(twittera.getAttribute("href"))
 
-const litext = document.querySelectorAll("li")
-console.log(litext[0].innerHTML)
+const atwo = document.querySelector(".a-two");
+
+atwo.setAttribute("href", "https://www.udemy.com")
+console.log(atwo.getAttribute("href"))
+
