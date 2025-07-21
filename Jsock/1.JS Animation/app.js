@@ -1,6 +1,6 @@
-const sidebar = document.querySelector(".sidebar")
-const btn = document.querySelector(".firstbtn")
+const sidebar = document.querySelector(".sidebar");
+const firstbtn = document.querySelector(".firstbtn");
 
-btn.addEventListener("click", () => {
+firstbtn.addEventListener("click", () => {
     sidebar.classList.toggle("hide")
 })
