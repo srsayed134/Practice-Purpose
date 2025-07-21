@@ -1,8 +1,6 @@
-const twittera = document.querySelector(".twittera")
-console.log(twittera.getAttribute("href"))
+const expect = (val) => ({
+  toBe: (a) => val === a ? true : "Not Equal",
+  notToBe: (a) => val !== a ? true : "Equal"
+});
 
-const atwo = document.querySelector(".a-two");
-
-atwo.setAttribute("href", "https://www.udemy.com")
-console.log(atwo.getAttribute("href"))
-
+console.log(expect(6).toBe(4))
