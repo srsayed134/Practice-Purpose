@@ -9,5 +9,5 @@ gsap.to(".box", {
     duration: 2,
     repeat: -1,
     y: 100,
-    yoyo: true,
+
 })
