@@ -49,3 +49,5 @@ function vehicles(type, brand, model, year) {
 const honda = vehicles("Sedan", "Honda", "Civic", 2017)
 
 console.log(honda.Description())
+
+//when a function return {} / object it call factory function
