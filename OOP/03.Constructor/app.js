@@ -86,3 +86,5 @@
 // const toyota = new Car("sedan", "civic", 2019, "civic")
 
 // console.log(toyota.__proto__.__proto__.__proto__)
+
+//Classes
