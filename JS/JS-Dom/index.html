@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM?</title>
+    <style>
+        h1,h2,h3,h4,h5{
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 400px;
+            box-shadow: 0.5px 0.5px 2px 2px #ccc;
+        }
+
+        .removeDot{
+            transform: translateX(-100px);
+            /* transition: 1s ease-in-out; */
+        }
+        ul li {
+            transition: 0.7s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>getElementByTagName</h1>
+    <h2 id="main">getElementById</h2>
+    <h3 class="cls">getElementByClassName</h3>
+    <h4 class="cls-1" id="id-1">querySlector</h4>
+    <ul>
+        <li>1</li>
+        <li class="li-two">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <button class="btn">List style</button>
+    
+    <div class="getSet">
+        <a href="http://youtube.com">youtube</a>
+        <input type="email" value="hello">
+    </div>
+
+    <div>
+        <a href="http://twitter.com" class="twittera">Twitter</a>
+        <input type="text">
+        <a class="a-two">Udemy</a>
+    </div>
+
+    <div>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta id iure voluptates animi qui tempora minima suscipit rem eum vel!</p>
+    </div>
+
+    <form >
+        <input type="text" class="name" placeholder="Type your name"/>
+        <input type="password" class="password" placeholder="Type your password">
+        <input type="email" class="email" placeholder="Type your email">
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
