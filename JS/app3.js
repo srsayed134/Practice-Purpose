@@ -1,38 +1,99 @@
+// 97: Introduction to Classes
+// Classes are one of the features introduced in the es6 version of Javascript
+
+// A class is a blueprint for the object. You can create an object from the class
+
+// You can think of the class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows, EventCounts. Based on these descriptions, you build the house.
+
+// Since many houses can be made from the same description , we can create many objects from a class
+// Class declaration
+// class Person {
+//     constructor(firstName, lastName, age){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this. age = age;
+//         this.fullName = function(){
+//             return `${this.firstName} ${this.lastName}`
+//         }
+//     }
+//     //Prototypal member
+//     greet(){
+//         return `Hello there ${this.firstName} ${this.lastName}`
+//     }
+
+// }
+// const Sayed = new Person("Sayedur", "Rahman", 20);
+// console.log(Sayed.greet())
+
+// //Another class for inharitance from Person class
+// class Programmer extends Person{
+//     constructor(firstName, lastName, age, pl, experience){
+//         super(firstName, lastName, age)
+//         this.pl = pl;
+//         this.experience = experience;
+//     }
+// }
+// const Rakib = new Programmer("Rakib", "Hossain", 23, "Golang", 12);
+// console.log(Rakib)
+// console.log(Rakib.greet()) //Hello there Rakib Hossain
+
+// Challenge ++++++++++++
+
+// class Hero {
+//     constructor(name, level){
+//         this.name = name;
+//         this.level = level;
+//     }
+//     greet(){
+//         return `${this.name} says hello`
+//     }
+// }
+// const hero = new Hero();
+// class Mega extends Hero{
+//     constructor(name, level ,spell){
+//         super(name, level);
+//         this.spell = spell;
+//     }
+// }
+// const mega = new Mega("Flang", 5, "Shogan")
+// console.log(mega.greet())
+
+
 // 96: Prototypal Inheritance
 // Prototypal inheritance is a mechanism in javascript that allows objects to inherit properties and methods from other objects. It is a fundamental concepts in the language and is based on the prototypes for others objects, forming a hierarchical chain of inheritance
 
 //This is animal constructor
-function Animal(name){
-    this.Animalname = name;
-}
-Animal.prototype.sound = function(){
-    return "Animal sound"
-}
-const animal = new Animal("Frog");
-console.log(animal);
-console.log(animal.Givenname);
-console.log(animal.sound());
+// function Animal(name){
+//     this.Animalname = name;
+// }
+// Animal.prototype.sound = function(){
+//     return "Animal sound"
+// }
+// const animal = new Animal("Frog");
+// console.log(animal);
+// console.log(animal.Givenname);
+// console.log(animal.sound());
 
-//This is dog constructor
-function Dog(name, breed){
-    // this.Dognname = name //it could be use but,
-    //Inherate properties from Animal
-    Animal.call(this, name); // but, if you want to through Animal you shoud use Animalname for call
-    this.GivenbreedName = breed;
-}
-//Inherate sound() method from Animal
-Dog.prototype = Object.create(Animal.prototype)
+// //This is dog constructor
+// function Dog(name, breed){
+//     // this.Dognname = name //it could be use but,
+//     //Inherate properties from Animal
+//     Animal.call(this, name); // but, if you want to through Animal you shoud use Animalname for call
+//     this.GivenbreedName = breed;
+// }
+// //Inherate sound() method from Animal
+// Dog.prototype = Object.create(Animal.prototype)
 
-//Create a Dog self method
-Dog.prototype.bark = function (){
-    return "Woof!"
-}
-const dog = new Dog("Buddy", "Husky")
+// //Create a Dog self method
+// Dog.prototype.bark = function (){
+//     return "Woof!"
+// }
+// const dog = new Dog("Buddy", "Husky")
 
-console.log(dog.Animalname) // see, i use Animalname  
-console.log(dog.Dogname) //if i use Dogname it will result in undefined you can after uncomment this.Dogname = name
-console.log(dog.sound())
-console.log(dog.bark())
+// console.log(dog.Animalname) // see, i use Animalname  
+// console.log(dog.Dogname) //if i use Dogname it will result in undefined you can after uncomment this.Dogname = name
+// console.log(dog.sound())
+// console.log(dog.bark())
 
 // So, by this [Animal.call(this, name)] i can inherate Animal properties and by this [Dog.prototype = Object.create(Animal.prototype)] i can inherate method using Protypical mechanism
 
