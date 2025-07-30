@@ -1,3 +1,31 @@
+//98: Modifiers in OOP (Encapsulation, Abstraction, Inheritance, Polymorphism)
+//Private closure, Public ,Protected
+function MyClass(publicField, privateField, protectedField) {
+    this.publicField = publicField;
+    const _privateField = privateField;
+    const _protectedField = protectedField;
+
+    //Public Method
+    this.publicMethod = function(){
+        return `Public Field: ${publicField}`
+    }
+    //Private Method
+    function _privateMethod(){
+        return `Private Method: ${_privateField}`;
+    }
+
+    //Protected method
+    function _protectedMethod(){
+        return `ProtectedMethod: ${_protectedField}`
+    }
+    this.accessProtectedMethod = function(){
+        return _protectedMethod();
+    }
+}
+
+const MyObject = new MyClass("Public Data", "Private Data", "Protected Data");
+console.log(MyObject.accessProtectedMethod())
+
 // 97: Introduction to Classes
 // Classes are one of the features introduced in the es6 version of Javascript
 
