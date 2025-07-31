@@ -1,32 +1,33 @@
 // 99: Encapsulation
+// Encapsulation is the concept of bundling data (properties) and methods (function) together within an objects, allowing the object to controll access to its internal data and behavior. This helps to hide implementation details and expose only necessary interfaces to interact with the object. In JavaScript, you can achive encapsulation by using closures, symbols, or naming conventions to simulate private members and expose public interfaces
  
 //98: Modifiers in OOP (Encapsulation, Abstraction, Inheritance, Polymorphism)
 //Private closure, Public ,Protected
-function MyClass(publicField, privateField, protectedField) {
-    this.publicField = publicField;
-    const _privateField = privateField;
-    const _protectedField = protectedField;
+// function MyClass(publicField, privateField, protectedField) {
+//     this.publicField = publicField;
+//     const _privateField = privateField;
+//     const _protectedField = protectedField;
 
-    //Public Method
-    this.publicMethod = function(){
-        return `Public Field: ${publicField}`
-    }
-    //Private Method
-    function _privateMethod(){
-        return `Private Method: ${_privateField}`;
-    }
+//     //Public Method
+//     this.publicMethod = function(){
+//         return `Public Field: ${publicField}`
+//     }
+//     //Private Method
+//     function _privateMethod(){
+//         return `Private Method: ${_privateField}`;
+//     }
 
-    //Protected method
-    function _protectedMethod(){
-        return `ProtectedMethod: ${_protectedField}`
-    }
-    this.accessProtectedMethod = function(){
-        return _protectedMethod();
-    }
-}
+//     //Protected method
+//     function _protectedMethod(){
+//         return `ProtectedMethod: ${_protectedField}`
+//     }
+//     this.accessProtectedMethod = function(){
+//         return _protectedMethod();
+//     }
+// }
 
-const MyObject = new MyClass("Public Data", "Private Data", "Protected Data");
-console.log(MyObject.accessProtectedMethod())
+// const MyObject = new MyClass("Public Data", "Private Data", "Protected Data");
+// console.log(MyObject.accessProtectedMethod())
 
 // 97: Introduction to Classes
 // Classes are one of the features introduced in the es6 version of Javascript
