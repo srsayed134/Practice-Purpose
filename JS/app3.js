@@ -1,3 +1,5 @@
+// 99: Encapsulation
+ 
 //98: Modifiers in OOP (Encapsulation, Abstraction, Inheritance, Polymorphism)
 //Private closure, Public ,Protected
 function MyClass(publicField, privateField, protectedField) {
