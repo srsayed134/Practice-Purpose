@@ -1,5 +1,27 @@
 // 99: Encapsulation
 // Encapsulation is the concept of bundling data (properties) and methods (function) together within an objects, allowing the object to controll access to its internal data and behavior. This helps to hide implementation details and expose only necessary interfaces to interact with the object. In JavaScript, you can achive encapsulation by using closures, symbols, or naming conventions to simulate private members and expose public interfaces
+function Counter() {
+    let _count = 0 ;
+
+    this.increment = function(){
+        _count++
+    }
+
+    this.decrement = function(){
+        _count--
+    }
+
+    this.getCount = function(){
+        return _count
+    }
+}
+const counter = new Counter()
+counter.increment();
+counter.increment();
+counter.increment();
+console.log(counter.getCount());
+counter.decrement();
+console.log(counter.getCount());
  
 //98: Modifiers in OOP (Encapsulation, Abstraction, Inheritance, Polymorphism)
 //Private closure, Public ,Protected
