@@ -1,27 +1,168 @@
-// 99: Encapsulation
-// Encapsulation is the concept of bundling data (properties) and methods (function) together within an objects, allowing the object to controll access to its internal data and behavior. This helps to hide implementation details and expose only necessary interfaces to interact with the object. In JavaScript, you can achive encapsulation by using closures, symbols, or naming conventions to simulate private members and expose public interfaces
-function Counter() {
-    let _count = 0 ;
+// 102: Polymorphism
+// Polymorphism allows objects to be treated ad instances of their parent class, even if they are instances of a subclass. This facilitates writing code that works with different types of objects in a generic way. In javascript, polymorphism is achieved through method overriding, where a subclass provides its own implementation of a method that is already defined in the parent class. The code can then use the same methos to work with both parent and subclass instances.
 
-    this.increment = function(){
-        _count++
+class Animal{
+    constructor(name){
+        this.name = name
     }
-
-    this.decrement = function(){
-        _count--
-    }
-
-    this.getCount = function(){
-        return _count
+    makeSound(){
+        return "Unknown sound";
     }
 }
-const counter = new Counter()
-counter.increment();
-counter.increment();
-counter.increment();
-console.log(counter.getCount());
-counter.decrement();
-console.log(counter.getCount());
+
+class Dog extends Animal{
+    constructor(name){
+        super(name)
+    }
+    //Over riding method
+    makeSound(){
+        return "Woof!"
+    }
+}
+
+class Cat extends Animal{
+    constructor(name){
+        super(name)
+    }
+
+    //Overriding method
+    makeSound(){
+        return "Mewoo!"
+    }
+}
+
+function animalInfo (animal){
+    console.log(`Name: ${animal.name}`)
+    console.log(`Sound: ${animal.makeSound()}`)
+}
+const dog = new Dog("Nimda");
+const cat = new Cat("Hartabush")
+
+// console.log(dog.name) //Nimda
+// console.log(dog.makeSound()) //Woof!
+animalInfo(dog);
+animalInfo(cat);
+// console.log(cat.name); //Hartabush
+// console.log(cat.makeSound()) //Mewoo
+
+// 101: Inheritance
+// Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). This enebles code reuse and the creation of hierarchical relationships between classes. In JavaScript, inheritance can be achieved through prototype-based inheritance (before ES6) or using ES6 classes (with the extends kyword)
+//ES5
+//  function Animal (name){
+//     this.name = name
+//  }
+//  //Method shared among all Animal instances
+//  Animal.prototype.makeSound = function(){
+//     return "Unknown sound"
+//  }
+//  function Dog(name){
+//     Animal.call(this, name);
+//  }
+//  Dog.prototype = Object.create(Animal.prototype);
+
+//  Dog.prototype.makeSound = function(){
+//     return "Woff!"
+//  }
+//  const dog = new Dog("Buddy")
+//  console.log(dog.name) //Buddy
+//  console.log(dog.makeSound()) // Woff!
+
+//  const genericAnimal = new Animal ("Generic Animal");
+//  console.log(genericAnimal.name) //Generic Animal
+//  console.log(genericAnimal.makeSound()) //Unknown sound
+
+//Es6
+
+// class Animal{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     makeSound(){
+//         return "Unknown sound"
+//     }
+// }
+// class dog extends Animal{
+//     constructor(name){
+//         super(name);
+//     }
+//     makeSound(){
+//         return "Woof!"
+//     };
+// }
+// class cat extends Animal{
+//     constructor(name){
+//         super(name);
+//     }
+//     makeSound(){
+//         return "Mewoo!"
+//     }
+// }
+// const Dog = new dog("Mikhail");
+// const Cat = new cat("Meoww");
+// console.log(Dog.makeSound())
+// console.log(Cat.makeSound())
+
+// 100: Abstraction
+// Abstraction is the process of simplifying complex systems by breaking them dowm into smaller, manageable parts .It allow you to focus on the essential features of an object and hide unnecesssary details.In JavaScript , you can use abstract classes to define abstract structures and then implement them in concrete objects
+
+// class Animal{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     //Abstract method (to be implemented by subclasses)
+//     makeSound(){
+//         throw new Error("Method (makeSound) must be implemented");
+//     }
+// }
+// class Dog extends Animal {
+//     constructor(name){
+//         super(name);
+//     }
+//     // Implementing the abstract method 
+//     makeSound(){
+//         return "Woff!";
+//     }
+// }
+// class Cat extends Animal{
+//     constructor(name){
+//         super(name);
+//     }
+//     makeSound(){
+//         return "Meow!";
+//     }
+// }
+
+// const dog = new Dog("Buddy");
+// console.log(dog.name)
+// console.log(dog.makeSound())
+// const cat = new Cat("Whisker");
+// console.log(cat.name)
+// console.log(cat.makeSound())
+
+// 99: Encapsulation
+// Encapsulation is the concept of bundling data (properties) and methods (function) together within an objects, allowing the object to controll access to its internal data and behavior. This helps to hide implementation details and expose only necessary interfaces to interact with the object. In JavaScript, you can achive encapsulation by using closures, symbols, or naming conventions to simulate private members and expose public interfaces
+// function Counter() {
+//     let _count = 0 ;
+
+//     this.increment = function(){
+//         _count++
+//     }
+
+//     this.decrement = function(){
+//         _count--
+//     }
+
+//     this.getCount = function(){
+//         return _count
+//     }
+// }
+// const counter = new Counter()
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// console.log(counter.getCount()); //3
+// counter.decrement();
+// console.log(counter.getCount()); //2
  
 //98: Modifiers in OOP (Encapsulation, Abstraction, Inheritance, Polymorphism)
 //Private closure, Public ,Protected
