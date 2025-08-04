@@ -1,47 +1,150 @@
+// 105: Callback Hell (Async)
+// CallBack hell (When you not use promise and asunc await )
+
+// function callbackHell(callback){
+//     setTimeout(() => {
+//        const data = "Inside (callbackHell) function";
+//        console.log(data);
+//        callback(data)
+//     }, 2000)
+// }
+// function firstFunc(data, callback){
+//     setTimeout(() => {
+//         const processedData = `${data} - Processed First`;
+//         console.log(`Inside (firstFunc) Function`);
+//         callback(processedData)
+//     }, 2000)
+// }
+
+// function secondFunc(data, callback){
+//     setTimeout(() => {
+//         const processedData = `${data} - Processed Second`;
+//         console.log(`Inside (secondFunc) Function`);
+//         callback(processedData)
+//     },2000)
+// }
+
+//Callback Hell
+// callbackHell((data) => {
+//     firstFunc(data, (processedData1) => {
+//         secondFunc(processedData1, (processedData2) => {
+//               console.log(`Final result- ${processedData2}`)
+//         })
+//     })
+// })
+
+//Callback is not always asynchronous
+// console.log("Start");
+// const numbers = [1, 2, 3, 4, 5, 6];
+// numbers.forEach((n) => console.log(n));
+// console.log("End")
+
+// Challenge - 1 (Async)
+
+// function getUserDataFromDM(name, callback){
+//     setTimeout(() => {
+//         console.log(`Getting User Name...`);
+//         callback(name);
+//     }, 2000)
+// }
+// function getUserHobbies(name, callback){
+//     setTimeout(() => {
+//         console.log(`Getting User Hobbies...`);
+//         callback(["Footbsll", "Reading"])
+//     }, 2000)
+// }
+// getUserDataFromDM("Sayed", (data) => {
+//    console.log(data);
+//    getUserHobbies(data, (hobby) => {
+//     console.log(hobby);
+//    })
+// })
+
+// 104: Real-World Examples 
+
+//Sync+++++++++++++++
+// Ex - 1
+// function addNumber(a, b){
+//     return a + b;
+// }
+// function multiplyNumbers (a, b){
+//     return a * b;
+// }
+// const result1 = addNumber(5, 5);
+// const result2 = multiplyNumbers(5, 5);
+
+// console.log(result1); // 10
+// console.log(result2); // 25
+
+// Ex - 2
+// function myFunc(){
+//     console.log("Inside function")
+// };
+// console.log("Start");
+// myFunc();
+// console.log("End")
+
+//Async++++++++++++++++
+// Ex - 1
+// console.log("Start");
+
+// setTimeout(() => {
+//     console.log("Inside Function")
+// }, 3000);  //This will executed after three seconds
+//  console.log("End") 
+
+//103: Sync & Async Programming
+//Sync
+//Synchronous JS refers to the traditional way of executing JS code , where each operation is performed in a sequential and blocking manner. In other words, each line of code is executed one after the other and the program will wait for each operation takes a long time to complete, it can potentially slow down the entire application , making it less responsive.
+
+
+//Async
+// Asynchronous JS allows certain operations to be executed independently from the main program flow, so they dont block the execution of other tasks.This is typically achived using techniques like callbacks, promises, and async/await, which allow developers to handle asynchronous operations more efficiently.
+
 // 102: Polymorphism
 // Polymorphism allows objects to be treated ad instances of their parent class, even if they are instances of a subclass. This facilitates writing code that works with different types of objects in a generic way. In javascript, polymorphism is achieved through method overriding, where a subclass provides its own implementation of a method that is already defined in the parent class. The code can then use the same methos to work with both parent and subclass instances.
 
-class Animal{
-    constructor(name){
-        this.name = name
-    }
-    makeSound(){
-        return "Unknown sound";
-    }
-}
+// class Animal{
+//     constructor(name){
+//         this.name = name
+//     }
+//     makeSound(){
+//         return "Unknown sound";
+//     }
+// }
 
-class Dog extends Animal{
-    constructor(name){
-        super(name)
-    }
-    //Over riding method
-    makeSound(){
-        return "Woof!"
-    }
-}
+// class Dog extends Animal{
+//     constructor(name){
+//         super(name)
+//     }
+//     //Over riding method
+//     makeSound(){
+//         return "Woof!"
+//     }
+// }
 
-class Cat extends Animal{
-    constructor(name){
-        super(name)
-    }
+// class Cat extends Animal{
+//     constructor(name){
+//         super(name)
+//     }
 
-    //Overriding method
-    makeSound(){
-        return "Mewoo!"
-    }
-}
+//     //Overriding method
+//     makeSound(){
+//         return "Mewoo!"
+//     }
+// }
 
-function animalInfo (animal){
-    console.log(`Name: ${animal.name}`)
-    console.log(`Sound: ${animal.makeSound()}`)
-}
-const dog = new Dog("Nimda");
-const cat = new Cat("Hartabush")
+// function animalInfo (animal){
+//     console.log(`Name: ${animal.name}`)
+//     console.log(`Sound: ${animal.makeSound()}`)
+// }
+// const dog = new Dog("Nimda");
+// const cat = new Cat("Hartabush")
 
-// console.log(dog.name) //Nimda
-// console.log(dog.makeSound()) //Woof!
-animalInfo(dog);
-animalInfo(cat);
+// // console.log(dog.name) //Nimda
+// // console.log(dog.makeSound()) //Woof!
+// animalInfo(dog);
+// animalInfo(cat);
 // console.log(cat.name); //Hartabush
 // console.log(cat.makeSound()) //Mewoo
 

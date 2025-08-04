@@ -1,11 +1,30 @@
 //Array chunk
-//  waiting............ 
+// function chunk(array, size){
+//     const chunked = [];
+//     let index = 0;
+//     while(index < array.length){
+//         const chunk = array.slice(index, index + size);
+//         console.log(chunk);
+//         chunked.push(chunk);
+//         index += size;
+//     }
+//     return chunked;
+// }
+
+// const arr = [1,2,3,4,5,6,7,8,9];
+// const result = chunk(arr, 2)
 // Write a function that takes an array and a chunk size as InputDeviceInfo. The function should return a new array where original array is split into chunks of the specified size
 
 // Max Profit 
 //  waiting.............
 //Pyramid projects 
-// function print(times){
+// function print(times// Ex - 1
+// console.log("Start");
+
+// setTimeout(() => {
+//     console.log("Inside Function")
+// }, 3000);  //This will executed after three seconds
+//  console.log("End")){
 //     let symbol1 = "$";
 //     console.log(symbol1)
 //     for(let i = 0; i <= times; i++){
@@ -177,5 +196,5 @@
 // const numbers = [1,2,3,4,5,6]
 
 // const getElement = (arr, index) => arr[index]
-
-// console.log(getElement(numbers, 2))
+// const result = getElement(numbers, 2)
+// console.log(result) //3
