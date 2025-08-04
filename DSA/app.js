@@ -1,3 +1,31 @@
+//Two Sum ( ugly code )
+
+// function twoSum(arr, expectingNumber){
+//     let indexPosition = [];
+//     let index = 0;
+
+    
+//     for(let i = 0; i < arr.length; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             if(arr[i] + arr[j] === expectingNumber){
+//                 indexPosition.push(i);
+//                 indexPosition.push(j);
+//                 console.log(`${expectingNumber} is found`)
+//             }
+//         }
+//     }
+//     if(indexPosition.length === index){
+//         console.log(`${expectingNumber} is not found`)
+//     }else{
+//         return indexPosition;
+//     }
+// }
+
+// const arr = [5, 10, 20, 30];
+// const expecting = 57;
+// const res = twoSum(arr, expecting)
+// console.log(res)
+
 //Array chunk
 // function chunk(array, size){
 //     const chunked = [];
