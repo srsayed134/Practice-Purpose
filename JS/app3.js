@@ -1,3 +1,141 @@
+// 108: Reading Textual Data
+
+// Text method returns promise if resolved will return text representation of budy
+// Fetch API promise only rejects when we have network error (not in other cases)
+fetch("text.txt")
+.then(res => res.text())
+.then(data => console.log(data))
+.catch(err => console.log(err))
+
+// 107: Async Functions
+// Async is a special function that is designed to operate asynchronously, meaning that it can perform tasks in the background while other code continues to execute. Async functions are marked with the async keyword. 
+// await
+// The await operator is used to wait for a Promise.It can only be used inside an async function within regular Javascript code. 
+
+// function fetchDataFromServer(){
+//     return new Promise((resolve, reject) => {
+//        setTimeout(() => {
+//          resolve("User data retrived from the server.")
+//        }, 2000);
+//      });
+// }
+// async function getUserData() {
+//     try {
+//         const data = await fetchDataFromServer();
+//         console.log(data);
+//         console.log("Remaining task can be executed")
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// getUserData()
+
+//Challenge 
+
+// function callbackHell(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const data = `Inside (callbackHell) function`
+//             console.log(data)
+//             resolve(data);
+//         }, 2000);
+//     })
+// }
+// function firstFunc(data){
+//    return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         const processedData1 = `${data} - processed first 1`;
+//         console.log("Inside (firstFunc) Function");
+//         resolve(processedData1)
+//     }, 2000);
+//    })
+// }
+// function secondFunc(data){
+//    return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         const processedData2 = `${data} - processed first 2`;
+//         console.log("Inside (secondFunc) Function");
+//         resolve(processedData2)
+//     }, 2000);
+//    })
+// }
+// function threeFunc(data){
+//    return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         const processedData3 = `${data} - processed first 3`;
+//         console.log("Inside (thirdFunc) Function");
+//         resolve(processedData3)
+//     }, 2000);
+//    })
+// }
+// async function processDataWithAsyncAwait(){
+//     try {
+//         const data = await callbackHell();
+//         const processedData1 = await firstFunc(data);
+//         const processedData2 = await secondFunc(processedData1);
+//         const processedData3 = await threeFunc(processedData2);
+
+//         console.log(`Final : ${processedData3}`)
+//     } catch (error) {
+//         console.log(`Error: ${error}`)
+//     }
+// }
+// processDataWithAsyncAwait()
+// 106: Promises
+// A promise is an object representing the eventual completion or failure of an asynchronous operation. 
+// function checkNumber(number){
+//     return new Promise((resolve, reject) => {
+//         if (number % 2 === 0) {
+//             resolve(`${number} is an even number`)
+//         } else{
+//             reject(`${number} is an odd number`)
+//         }
+//     })
+// }
+// checkNumber(21)
+// .then((message) => {
+//     console.log(`Success: ${message}`)
+// })
+// .catch((message) => {
+//     console.log(`Fail: ${message}`)
+// })
+
+// function callbackHell(data){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const data = "Inside (callbackHell) function 1"
+//             console.log(data);
+//             resolve(data)
+//         }, 1000);
+//     })
+// }
+// function firstFunc(data){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const processedData = `${data} - Processed data`;
+//             console.log("Inside (firstFunc) function 2");
+//             resolve(processedData)
+//         }, 1000);
+//     })
+// }
+// function secondFunc(data){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const processedData = `${data} - Processed data`;
+//             console.log("Inside (secondFunc) function 3")
+//             resolve(processedData)
+//         }, 1000);
+//     })
+// }
+
+// callbackHell()
+// .then((data) => firstFunc(data))
+// .then((processedData2) => secondFunc(processedData2))
+// .then((processedData3) => console.log(`Final result of tall functions with Promsise: ${processedData3}`)) 
+// .catch((error) => console.log(`Error: ${error}`))
+
+
+
 // 105: Callback Hell (Async)
 // CallBack hell (When you not use promise and asunc await )
 
