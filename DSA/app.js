@@ -1,4 +1,7 @@
-//Two Sum ( ugly code )
+// What is Linked List
+// A linked list is a lineat data struture where ElementInternals, called nodes, are not stored contiguously in memory. Instead, each node contains data and a ReferenceError, or link, to the next node in the sequence. 
+
+// Two Sum ( ugly code )
 
 // function twoSum(arr, expectingNumber){
 //     let indexPosition = [];
@@ -26,7 +29,7 @@
 // const res = twoSum(arr, expecting)
 // console.log(res)
 
-//Array chunk
+// Array chunk
 // function chunk(array, size){
 //     const chunked = [];
 //     let index = 0;
@@ -45,7 +48,7 @@
 
 // Max Profit 
 //  waiting.............
-//Pyramid projects 
+// Pyramid projects 
 // function print(times// Ex - 1
 // console.log("Start");
 
@@ -108,7 +111,7 @@
 // }
 
 // console.log(strCap("golw kol k lite"))
-//Int Reversal
+// Int Reversal
 
 // const reverseInt = (num) => parseInt(num.toString().split("").reverse().join("")) * Math.sign(num)
 // console.log(reverseInt(-654))
@@ -128,7 +131,7 @@
 
 // console.log(palString("abba"))
 
-//Reverse String
+// Reverse String
 // const reverseString = (str) => str.split("").reverse().join("")
 
 // console.log(reverseString("hello"))
@@ -192,12 +195,12 @@
 // console.log(MyNewArray)
 
 
-//O(log n) +++++++++++++++
+// O(log n) +++++++++++++++
 // log2^8 = ?
 // log2^8 = 3
 
 
-//O(n^2 + n) +++++++++++++
+// O(n^2 + n) +++++++++++++
 // function findPairs (arr){
 
 //     // O(n^2) 

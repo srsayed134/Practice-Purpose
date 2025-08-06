@@ -2,10 +2,12 @@
 
 // Text method returns promise if resolved will return text representation of budy
 // Fetch API promise only rejects when we have network error (not in other cases)
-fetch("text.txt")
-.then(res => res.text())
-.then(data => console.log(data))
-.catch(err => console.log(err))
+// fetch("text.txt")
+// .then(res => res.text())
+// .then(data => console.log(data))
+// .catch(err => console.log(err))
+
+// waiting ++++++++++++++++++++++
 
 // 107: Async Functions
 // Async is a special function that is designed to operate asynchronously, meaning that it can perform tasks in the background while other code continues to execute. Async functions are marked with the async keyword. 
