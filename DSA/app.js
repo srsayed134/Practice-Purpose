@@ -1,5 +1,55 @@
 // What is Linked List
 // A linked list is a lineat data struture where ElementInternals, called nodes, are not stored contiguously in memory. Instead, each node contains data and a ReferenceError, or link, to the next node in the sequence. 
+// Node
+class NodeName {
+    constructor(value) {
+        this.head = value;
+        this.next = null;
+    }
+}
+
+class LinkedList {
+    constructor(value){
+        this.head = new NodeName(value);
+        this.tail = this.head;
+        this.length = 1;
+    }
+    push(value){
+        let newNode = new NodeName(value);
+        //This is for if head is empthy
+        if(!this.head){
+            this.head = newNode;
+            this.tail = newNode;
+        }
+        this.tail.next = newNode;
+        this.tail = newNode;
+        this.length++
+    }
+
+    pop(){
+        if(!this.head){
+            return undefined;
+        }
+        let temp = this.head;
+        let prev = this.head;
+
+        while(temp.next){
+            prev = temp;
+            temp = prev.next;
+        }
+        this.tail = prev;
+        this.tail.next = null; //This will remove the last element
+        this.length--;
+
+        return temp;
+    }
+}
+
+const myLinkedList = new LinkedList(1);
+myLinkedList.push(10)
+myLinkedList.pop()
+console.log(myLinkedList)
+//Push method
 
 // Two Sum ( ugly code )
 
