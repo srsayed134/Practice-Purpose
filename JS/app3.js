@@ -1,3 +1,64 @@
+// 8: Mastering Variables
+// let name;
+// console.log(name); //Undefined
+
+// let name = "Sayedur Rahman";
+// let age = 23;
+// console.log(age);
+
+//You can not use reserved key word for naming a variable kie for, class, var
+//Const.........
+// const youtubeChannet = "Nature";
+// youtubeChannet = "Water";
+// console.log(youtubeChannet) //Error
+//###That is why you can not change assigining variable in const keyword; it is unchangeable
+//**** Challenge */
+// let name = "Sayed";
+// let whatDoYouWannaBecomeInYourLife = "Programmer";
+// const gender = "Male";
+// const twitterHandle = "srsaye134";
+// console.log(name, whatDoYouWannaBecomeInYourLife, gender, twitterHandle) 
+
+//9: Working with Numbers
+// This is a primitive
+// let num = 10; //it can be (-10), (10.05)
+// console.log(num)
+// console.log(typeof num)
+// console.log(2 + 2);
+// console.log(2 - 2);
+// console.log(2 * 2);
+// console.log(2 / 2);
+// console.log(2 % 2);
+// console.log(2 ** 2);
+
+// let counter = 4;
+// counter++;
+// console.log(counter) // 5
+
+//***Cahllenge */
+// const firstFavNum = 20;
+// const secondFavNum = 10;
+// console.log(firstFavNum + secondFavNum)
+// console.log(firstFavNum - secondFavNum)
+// console.log(firstFavNum * secondFavNum)
+// console.log(firstFavNum / secondFavNum)
+// console.log(firstFavNum % secondFavNum)
+// console.log(firstFavNum ** firstFavNum)
+
+// 10: Grasping Booleans
+// It is only about true and false
+// Falsey value -> null, undefined, 0, -0, NaN, "", '', ``, (empthy quotes),
+// Truthy value -> rest of is truthy value 
+// let notDefined = undefined;
+// let notDefined1 = null;
+// console.log(notDefined) //undefined
+// console.log(notDefined1) //null
+
+// let isJsProgrammingLanguage = true;
+// let isJsHard = false;
+// let favNum = 7;
+// console.log(favNum + undefined) //NaN
+
 // 108: Reading Textual Data
 
 // Text method returns promise if resolved will return text representation of budy
