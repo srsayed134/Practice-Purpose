@@ -1,4 +1,4 @@
-// 8: Mastering Variables
+// 8: Mastering Variables++++++++++
 // let name;
 // console.log(name); //Undefined
 
@@ -19,7 +19,7 @@
 // const twitterHandle = "srsaye134";
 // console.log(name, whatDoYouWannaBecomeInYourLife, gender, twitterHandle) 
 
-//9: Working with Numbers
+//9: Working with Numbers++++++++++
 // This is a primitive
 // let num = 10; //it can be (-10), (10.05)
 // console.log(num)
@@ -45,7 +45,7 @@
 // console.log(firstFavNum % secondFavNum)
 // console.log(firstFavNum ** firstFavNum)
 
-// 10: Grasping Booleans
+// 10: Grasping Booleans++++++++++
 // It is only about true and false
 // Falsey value -> null, undefined, 0, -0, NaN, "", '', ``, (empthy quotes),
 // Truthy value -> rest of is truthy value 
@@ -58,7 +58,7 @@
 // let isJsHard = false;
 // let favNum = 7;
 // console.log(favNum + undefined) //NaN
-// 11: Comparison Operators
+// 11: Comparison Operators ++++++++
 // Comparison Operators
 // --> Relational Operators
 
@@ -154,6 +154,64 @@
 // const res = person.greetArrow();
 // console.log(person.greetRegular())
 // // console.log(res)
+
+//12: Manipulating Strings++++++++++
+
+// let firstName = "Sayedur";
+// let lastName = `Rahman`;
+// let favThing = "Gaming";
+// let trimEx = " Name      "
+
+// let fullName = firstName +" " +  lastName; // Concat 
+// let fullName1 = firstName.concat(lastName) //Concat by method
+// favThing += " On ps5" //Append "string"
+// // console.log(favThing);
+// let fullNameLength = fullName.length;
+// console.log(fullNameLength) //14
+// console.log(fullName.toUpperCase())
+// console.log(fullName.toLowerCase())
+// console.log(fullName.slice(0, 3)) //Slicing from fullName
+// console.log(fullName.slice(3, 7)) //edur
+// console.log(fullName.split("")) //This method will return array
+// console.log(fullName.split(" ").join("-")); //First this will split two word " " by unising space if you not use space it will split all words then two word is joined by "-" this
+// console.log(fullName.includes("y")) //true
+// console.log(fullName.includes("z")) //false
+// console.log(trimEx.trim())
+
+// 13: Type Conversion ++++++++
+
+//String to number---------
+// let money = "50";
+// money = parseInt(money) //or
+// let taka = parseInt("20") //or
+// let rupy = +"20"; //or
+// let dollar = "20";
+// dollar = Number(dollar) //
+// console.log(typeof money)
+// console.log(typeof taka)
+// console.log(typeof rupy)
+// console.log(typeof dollar)
+
+//Number to string---------
+// let money = 50;
+// money = money.toString();
+// console.log(typeof money) //String
+// let age = 23;
+// let strAge = String(age);
+// console.log(typeof strAge) //String
+
+//String to decimal--------
+// let money = "50.251";
+// let toDeci = Number(money); //Number
+// console.log(typeof toDeci)
+
+// let doller = "25.451";
+// let toDec = parseFloat(doller); //Number
+// console.log(typeof toDec)
+
+//14: Conditional Statements++++++++
+
+
 
 
 
