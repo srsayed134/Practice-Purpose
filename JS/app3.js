@@ -58,6 +58,105 @@
 // let isJsHard = false;
 // let favNum = 7;
 // console.log(favNum + undefined) //NaN
+// 11: Comparison Operators
+// Comparison Operators
+// --> Relational Operators
+
+// console.log(10 > 10)// False
+// console.log(10 < 10)// False
+// console.log(10 < 50)// True
+// console.log(10 <= 10)// True
+// console.log(10 >= 10)// True
+// --> Equality Operators
+// === strict quality (type + value)
+// !== strict non-quality (type + value)
+// == lose non-quality (value)
+// != lose not - quality (value)
+
+// console.log(10 === 10); //True
+// console.log(10 !== 10); //False
+// console.log(10 == 10); //True
+// console.log(typeof 10); //number
+// console.log(typeof "10") //string
+// console.log(10 == "10"); //True
+// console.log(10 === "10"); //False
+//*** Challenge */
+// let firstFavNumb = 37;
+// let secondFavNum = 57;
+// console.log(firstFavNumb > secondFavNum) 
+// console.log(firstFavNumb < secondFavNum) 
+// console.log(firstFavNumb <= secondFavNum) 
+// console.log(firstFavNumb >= secondFavNum) 
+// console.log(firstFavNumb === secondFavNum) 
+// console.log(firstFavNumb !== secondFavNum) 
+// console.log(firstFavNumb != secondFavNum) 
+// console.log(firstFavNumb == secondFavNum) 
+
+//++++++Revise+++++++
+// 89: OOP Introduction
+// Object - Oriented Promramming (OOP) is a programming language model / style organized around objects rather then "actions" and data rather then logic but 
+// Javascript is a versatile and dynamic programming languange that supports multiple paradims, including procedural, functional, and object-oriented programming. While JS is not a pure object-oriented language like Java or c++, it provides the tools and features to implement OOP concepts effectively
+//OOP in JS refers to the practice of designing and structuring code around objects and their interactions. It is a programming paradime that allows developers to model real-world entities and thei relationships using objects and classes.
+
+//90: Demystifying THIS Keyword
+// console.log(window)
+// console.log(this) //This refer window objects
+// console.log(window === this) //true because in DOM when you use "this" it means this will refer existing object wich is window for DOM
+// window.firstName = "Sayedur";
+// this.lastName = "Rahman"; // --> You can search by ctrl + f after expend the window object in console
+
+// function printThis(){
+//     return this //window
+// }
+// let res = printThis()
+// console.log(res) //answer will like window because this refer window
+
+// Another example  
+
+// const obj = {
+//     firstName : "Sayedur",
+//     lastName: "Rahman",
+//     fullName: function () {
+//         return this; //"Owner objects"
+//     }
+// }
+// const res = obj.fullName();
+// console.log(res)
+// console.log(res.firstName)// Sayedur
+// console.log(obj.firstName)// Sayedur
+
+//Little catch +++++++++++
+
+// const obj = {
+//     firstName : "Sayedur",
+//     lastName: "Rahman",
+//     fullName: () => {
+//         return this; //it will refer to window object because without using function "this" refer window so when use "this" it should be function not arrow function
+//     }
+// }
+// const res = obj.fullName();
+// console.log(res) // window
+// console.log(res.firstName) //undefined //because in window object there have no any firstName or lastName it have in (obj) object
+// console.log(obj.firstName) //Sayedur
+
+//***Challenge */
+// const person = {
+//     name: "Rakib",
+//     age: 25,
+//     greetRegular: function(){
+//         console.log(`Hello, my name is ${this.name} & I'm ${this.age} years old`)
+//     },
+//     greetArrow:() => {
+//         console.log(`Hello, my name is ${this.name} & i'm ${this.age} years old.`)
+//     }
+
+// }
+// const res = person.greetArrow();
+// console.log(person.greetRegular())
+// // console.log(res)
+
+
+
 
 // 108: Reading Textual Data
 
