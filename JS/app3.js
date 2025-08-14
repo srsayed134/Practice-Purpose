@@ -96,7 +96,7 @@
 // 89: OOP Introduction
 // Object - Oriented Promramming (OOP) is a programming language model / style organized around objects rather then "actions" and data rather then logic but 
 // Javascript is a versatile and dynamic programming languange that supports multiple paradims, including procedural, functional, and object-oriented programming. While JS is not a pure object-oriented language like Java or c++, it provides the tools and features to implement OOP concepts effectively
-//OOP in JS refers to the practice of designing and structuring code around objects and their interactions. It is a programming paradime that allows developers to model real-world entities and thei relationships using objects and classes.
+//OOP in JS refers to the practice of designing and structuring code around objects and their interactions. It is a programming paradime that allows developers to model real-world entities and their relationships using objects and classes.
 
 //90: Demystifying THIS Keyword
 // console.log(window)
@@ -210,8 +210,113 @@
 // console.log(typeof toDec)
 
 //14: Conditional Statements++++++++
+//I know it very well
+//**Challenge */
+// let password;
+// if(password === 8){
+//     console.log("Welcome")
+// }else if (password <= 8){
+//     console.log("Password is too short")
+// }else if (password >= 8){
+//     console.log("Too long Password & Pssssword should be 8 charactes")
+// }else{
+//     console.log("Please provide a password")
+// }
+
+//15: Switch Statements+++++++++++++
+// let x = 1;
+// let text;
+// switch (x) {
+//     case 0:
+//         text = "This is zero"
+//         console.log(text)
+//         break;
+//     case 1:
+//         text = "This is one"
+//         console.log(text)
+//         break;
+//     default:
+//         text = "No value found"
+//         console.log(text)
+// }
+//**Challenge */
+// let fruit = "Apple";
+// switch (fruit) {
+//     case "Banana":
+//         console.log("Banana is good!");
+//         break;
+//     case "Orange":
+//         console.log("I am not a fan of orange");
+//         break;
+//     case "Apple":
+//         console.log(`How you like them ${fruit}?`);
+//         break;
+
+//     default:
+//         console.log("I have never heard of that fruit")
+//         break;
+// }
+
+// 16: For Loop+++++++++++++++++++
+// for(let i = 1; i <= 100; i++){
+//     for(let j = 1; j <= 10; j++)
+//     console.log(`Hello Huxn ${i} ${j}`)
+// }
+//**Challenge */
+// let Name = "Sayedur Rahmna";
+// for(let i = 1; i <= 100; i++){
+//     console.log(`${Name} ${i}`)
+// }
+
+//  17: While Loop++++++++++++++++
+// let i = 1;
+// let name = "Huxn";
+// while(i <= 100){
+//     console.log(`${name} ${i}`);
+//     i++;
+// }
+//**Challenge */
+// let i = 10;
+// let name = "Sayedur Rahman";
+// while(i <= 100){
+//     console.log(`${name} ${i}`)
+//     i++;
+// }
+
+// 18: Do-While Loop +++++++++++++++
+// let i = 1;
+// do {
+//     console.log("Hello World", i);
+//     i++;
+// }while(i <= 100);
+//**Challenge */
+// let name = "Sayedur Rahman";
+// let i = 20;
+// do{
+//     console.log(`${name} ${i}`);
+//     i++;
+// }while(i <= 400);
+
+//+++++++++ Revise ++++++++++++++
+// 91: Factory Function
+
+//A factory function is a type of funtion that is used to create and return objects. It's a design pattern that provides an alternative way to create objects compares to using constructors and the new keyword.
 
 
+function createPerson (firstName, lastame, pl){
+    return {
+        firstName: firstName,
+        lastame: lastame,
+        pl: pl,
+        intro: function(){
+            console.log(`Hello my name is ${this.firstName} ${this.lastame} and i love ${this.pl}`)
+        },
+    }
+}
+const jhon = createPerson("Jhon", "Doe", "JavaScript");
+const huxn = createPerson("Huxn", "WebDev", "Golang")
+jhon.intro();
+huxn.intro();
 
 
 
