@@ -297,26 +297,95 @@
 //     i++;
 // }while(i <= 400);
 
+// 19: Logical Operations+++++++++++
+//&&
+//If booth operands/boolean values are true, else evaluates to false 
+//||
+//True is either of the operands/boolean values is true. evaluates to false if both are false
+//!
+// True if the operands is false and vice-versa
+
+// let password = "Huxn-webdev";
+// if(password.length >= 8 && password.includes("uxn")){
+//     console.log("Valid Password");
+// }else{
+//     console.log("Invalid Passord");
+// }
+
+//********************DATA STRI+UCTURE***********************
+//20: Arrays Introduction
+// const myList = [];
+// console.log(myList);
+
+// const numbers = [1,2,3,4,5,6,7,8];
+// console.log(numbers);
+
+// const strArray = ["Sayed", "Sabbir", "Sakin"];
+// console.log(strArray);
+// console.log(strArray[2]);
+
+// //Nestef array / 2 dimension array
+// const places = ["Cumilla", "Dahaka", "Sylhet", ["Meghna", "Timur"]];
+// console.log(places[3][0]) //Meghna
+
+// //**Challenge */
+// let favSinger = ["KK", "Adnan sami", "Alka"];
+// console.log(favSinger[0]);
+// let favNumers = [7, 21, 48, 53];
+// let mixedArr = ["string", ["otherarray"], 123, true];
+// console.log(mixedArr[1][0])
+
+//21: Array Techniques +++++++++++++++++
+
+
+
+
+
 //+++++++++ Revise ++++++++++++++
 // 91: Factory Function
 
 //A factory function is a type of funtion that is used to create and return objects. It's a design pattern that provides an alternative way to create objects compares to using constructors and the new keyword.
 
 
-function createPerson (firstName, lastame, pl){
-    return {
-        firstName: firstName,
-        lastame: lastame,
-        pl: pl,
-        intro: function(){
-            console.log(`Hello my name is ${this.firstName} ${this.lastame} and i love ${this.pl}`)
-        },
-    }
-}
-const jhon = createPerson("Jhon", "Doe", "JavaScript");
-const huxn = createPerson("Huxn", "WebDev", "Golang")
-jhon.intro();
-huxn.intro();
+// function createPerson (firstName, lastame, pl){
+//     return {
+//         firstName: firstName,
+//         lastame: lastame,
+//         pl: pl,
+//         intro: function(){
+//             console.log(`Hello my name is ${this.firstName} ${this.lastame} and i love ${this.pl}`)
+//         },
+//     }
+// }
+// const jhon = createPerson("Jhon", "Doe", "JavaScript");
+// const huxn = createPerson("Huxn", "WebDev", "Golang")
+// jhon.intro();
+// huxn.intro();
+
+//**Chalenge */
+// function Cars(type, model, year){
+//     return{
+//         type: type,
+//         model: model,
+//         year: year,
+//         description: function(){
+//             return `This is ${type} and the model is ${model} this was made ${year}`
+//         }
+//     }
+// }
+// let Toyota = Cars("sedan", "crown", 2018);
+// console.log(Toyota.description())
+
+// Using object literels ++++++++++++++++
+// function  createVehicle(type, model, year){
+//     return {
+//         type,
+//         model,
+//         year,
+//     }
+// }
+// let vehicle1 = createVehicle("Sedan", "Crown", 2010);
+// console.log(vehicle1.year)
 
 
 
