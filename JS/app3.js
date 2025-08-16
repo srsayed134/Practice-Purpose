@@ -336,9 +336,100 @@
 // console.log(mixedArr[1][0])
 
 //21: Array Techniques +++++++++++++++++
+// const fruits = ["apples", "pomegrante", "mango"];
+// const veg = ["carrot", "potato"];
+// const number = [2, 3, 5, 4, 8, 9, 4]
+// const exConcat = fruits.concat(veg);
+// console.log(exConcat)
+// fruits.push("Watermalon");
+// console.log(fruits);
+// console.log(fruits.includes("apple"));
+// console.log(fruits.unshift("banana"));
+// console.log(fruits);
+// console.log(fruits.pop());
+// console.log(fruits.shift());
+// // console.log(fruits.sort());
+// console.log(fruits.slice(1, 3));
+// console.log(fruits.splice(1, 0, "guaba", "pineapple"));
+// console.log(fruits);
+// console.log(fruits.length);
+// console.log(fruits.join("-"));
+// console.log(fruits.reverse());
+// console.log(number.sort())
 
+//22: JavaScript Objects
+// const person = {
+//     firstName: "Sayedur",
+//     lastName: "Rahman",
+//     age: 24,
+//     location: ["Planet", "Earth"],
+//     isProgrammer: true,
+//     10: "Ten",
 
+// }
+// Add key 
+// person.address = "Bangladesh"; 
 
+// Update valu
+// person.age = 23;
+
+// //Bracket notation -- is used for unusual key like numbers; 00000000
+// console.log(person["firstName"]);
+ // console.log(person["10"]) //Ten
+// console.log(person[10]) //Ten
+
+// //Dot notation -- 
+// console.log(person.firstName);
+// console.log(delete person.lastName); //true
+// console.log(person)
+
+//**Challenge */
+// let car = {
+//     type: "Sedan",
+//     model: "Alion",
+//     color: "Green",
+// }
+// console.log(typeof car);
+// car.type = "Crossover";
+// console.log(car);
+// car.wheels = 4;
+// console.log(car);
+
+// 23: Functions Basics ++++++++++++++
+// function greet(name){
+//     console.log(`this is ${name}`);
+// }
+// greet("Sayed");
+
+// //return function
+// function sayHelloByName(){
+//     let name = "Sayed";
+//     return `This is ${name}`
+// }
+// console.log(sayHelloByName());
+
+//**Challenge */
+// function myFunction(num1, num2){
+//    let multiple = num1 * num2;
+//    return multiple;
+// }
+// console.log(myFunction(2, 5));
+//24 Function Types +++++++++++++
+
+// Function Declaration
+// function sayHello(username){
+//     console.log(`Hey ${username}`)
+// }
+// sayHello("Sabbir");
+
+// //Function Expression
+
+// const sayGoodBye = function(username){
+//     console.log(`Hey goodbye ${username}`)
+// }
+// sayGoodBye("Sabbir");  //When you call this before function like in 426 line it will give you an error
+
+// 25: Callback Functions++++++++++++++++
 
 
 //+++++++++ Revise ++++++++++++++
