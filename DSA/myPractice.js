@@ -77,3 +77,52 @@
 //O(log n)++++++++++
 
 //O(log n) time complexity refers to an algorithms runtime that grows logarithmically with the size of the inout (reoresented by n). In simpler terms, as the inout size increases, the time it takes for the algorithm to run increases slowly.
+
+//DS Arrays+++++++++++
+
+//Creating Custom Array ++++++++++++
+
+class MyArray {
+    constructor() {
+        this.length = 0;
+        this.data = {}
+    }
+    push(item) {
+        this.data[this.length] = item;
+        this.length++;
+        return this.length
+    }
+    get(sum) {
+        return this.data[sum - 1]
+    }
+    pop() {
+        let lastElement = this.data[this.length - 1];
+        delete this.data[this.length - 1];
+        this.length--;
+        return lastElement;
+    }
+    shift() {
+        const firstItem = this.data[0];
+
+        for(let i = 0; i < this.length; i++){
+            this.data[i] = this.data[i + 1]
+        }git 
+
+        delete this.data[this.length - 1];
+        this.length--
+
+        return firstItem;
+    }
+}
+const myNewArray = new MyArray();
+myNewArray.push("Huxn");
+myNewArray.push("Jino");
+myNewArray.push("Kenm");
+// console.log(myNewArray);
+// console.log(myNewArray.get(2));
+// console.log(myNewArray.length)
+// console.log(myNewArray.pop());
+// console.log(myNewArray)
+// console.log(myNewArray)
+console.log(myNewArray.shift())
+console.log(myNewArray)
