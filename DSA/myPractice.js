@@ -82,47 +82,90 @@
 
 //Creating Custom Array ++++++++++++
 
-class MyArray {
-    constructor() {
-        this.length = 0;
-        this.data = {}
-    }
-    push(item) {
-        this.data[this.length] = item;
-        this.length++;
-        return this.length
-    }
-    get(sum) {
-        return this.data[sum - 1]
-    }
-    pop() {
-        let lastElement = this.data[this.length - 1];
-        delete this.data[this.length - 1];
-        this.length--;
-        return lastElement;
-    }
-    shift() {
-        const firstItem = this.data[0];
+// class MyArray {
+//     constructor() {
+//         this.length = 0;
+//         this.data = {}
+//     }
+//     push(item) {
+//         this.data[this.length] = item;
+//         this.length++;
+//         return this.length
+//     }
+//     get(sum) {
+//         return this.data[sum - 1]
+//     }
+//     pop() {
+//         let lastElement = this.data[this.length - 1];
+//         delete this.data[this.length - 1];
+//         this.length--;
+//         return lastElement;
+//     }
+//     shift() {
+//         const firstItem = this.data[0];
 
-        for(let i = 0; i < this.length; i++){
-            this.data[i] = this.data[i + 1]
-        }git 
+//         for(let i = 0; i < this.length; i++){
+//             this.data[i] = this.data[i + 1]
+//         }
 
-        delete this.data[this.length - 1];
-        this.length--
+//         delete this.data[this.length - 1];
+//         this.length--
 
-        return firstItem;
-    }
-}
-const myNewArray = new MyArray();
-myNewArray.push("Huxn");
-myNewArray.push("Jino");
-myNewArray.push("Kenm");
+//         return firstItem;
+//     }
+//     delete(index){
+//             let item = this.data[index];
+//             for(let i = index; i < this.length - 1; i++){
+//                 this.data[i] = this.data[i + 1];
+//             } //in here this.length - 1 means (5) it here because if it have (6) we can delete 6 because we have not any 6 length;8
+//             delete this.data[this.length - 1];
+//             this.length--;
+//             return item
+//     }
+// }
+// const myNewArray = new MyArray();
+// myNewArray.push("Huxn");
+// myNewArray.push("Jino");
+// myNewArray.push("Kenm");
+// myNewArray.push("Khabka");
+// myNewArray.push("Charu");
+// myNewArray.push("Nikim");
 // console.log(myNewArray);
 // console.log(myNewArray.get(2));
 // console.log(myNewArray.length)
 // console.log(myNewArray.pop());
 // console.log(myNewArray)
 // console.log(myNewArray)
-console.log(myNewArray.shift())
-console.log(myNewArray)
+// console.log(myNewArray.shift())
+// console.log(myNewArray);
+// console.log(myNewArray.delete(3))
+// console.log(myNewArray);
+
+//Reverse String;
+// function reverseString(value){
+//     let res = "";
+//     for (let i = value.length - 1; i >= 0; i--) {
+//         res += value[i]
+//     }
+//     return res;
+// }
+// let reverString = reverseString("Sayed") 
+// console.log(reverString);
+
+// function rev(str){
+//     let reverse = str.split("").reverse().join("");//in there we 1st change str to array thrn we reverse it than we again change to string
+//     return reverse;
+// }
+// console.log(rev("Sayed"))
+
+// Palindromes
+// If the reverse string is equal to the original one then  that word is a palindrome 
+
+// function reverse(str){
+//     let res = str.split("").reverse().join("");
+//     if(res === str){
+//         return `${res} is same as ${str}`
+//     }
+//     return `${res} is not valid palidram`
+// }
+// console.log(reverse("cddc"))
