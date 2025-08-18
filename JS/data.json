@@ -1,0 +1,11 @@
+{
+    "name": "Jhon Doe",
+    "age": 20,
+    "email": "jhon@email.com",
+    "isSubscribed": true,
+    "hobbies": ["Gamming", "Programming", "Traveling"],
+    "adresses": {
+        "country": "Finland",
+        "postCode": 14000
+    }
+}

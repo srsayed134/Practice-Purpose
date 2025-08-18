@@ -430,6 +430,110 @@
 // sayGoodBye("Sabbir");  //When you call this before function like in 426 line it will give you an error
 
 // 25: Callback Functions++++++++++++++++
+//When we provide function as an (argument) to other fucntion that function is known as callback function
+
+//Example 1 
+// function showCallFunc(value){
+//     let num = 10;
+//     let num2 = 10;
+//     value(num, num2);
+// }
+// showCallFunc(function add(number, number1){
+//     let total = number + number1;
+//     console.log(total)
+// })
+
+//Example 2
+
+// function greet(name, cd){
+//     console.log(`Hello ${name}`);
+//     cd();
+// }
+// function callMe(){
+//     console.log(`I am callback function`)
+// }
+// greet("Sayed", callMe)
+
+/**Challenge */
+// function showCallFunc(fn){
+//     const num = 10;
+//     fn(num)
+// };
+// showCallFunc(function res(fromNum){
+//     console.log(fromNum)
+// })
+
+//26: Variable Scope +++++++++++++++
+// Scope in JS refers to the current context of the, which determines the accessibility of variables to JS.
+//Two types of scope have is JS Global(outside of block), Local(Inside of a block) ;
+
+// 27: Object Methods+++++++++++++++
+// // Methods example 1
+// function greet(){
+//     return `Hello, my name is ${person.name} and i am ${person.age} years old`
+// }
+
+// const person = {
+//     name: "Huxn",
+//     age: 27,
+//     greet,
+// }
+// console.log(person.greet())
+
+//Example 2
+
+// const person1 = {
+//     name: "Huxn",
+//     age: 27,
+//     greet: function(){
+//         return `I am ${person1.name} and my age is ${person1.age}`
+//     }
+// }
+// console.log(person1.name) //Huxn
+// console.log(person1.greet()) //I am Huxn and my age is 27
+
+//28: JSON Handling++++++++++++
+// const person = {
+//     "name": "Jhon Doe",
+//     "age": 20,
+//     "email": "jhon@email.com",
+//     "isSubscribed": true,
+//     "hobbies": ["Gamming", "Programming", "Traveling"],
+//     "adresses": {
+//         "country": "Finland",
+//         "postCode": 14000
+//     },
+// };
+// const jsonGtring = JSON.stringify(person);
+// const parsedObject = JSON.parse(jsonGtring)
+// console.log(parsedObject);
+
+// 29: Dates & Time+++++++++++++
+
+//Year, Month, Day, Hours, Minitues, Seconds, Miliseconds
+// const customeDate = new Date(2024, 2, 24, 12, 30, 0, 0);
+// console.log(customeDate);
+// const currentDate = new Date();
+// console.log(currentDate);
+// const year = currentDate.getFullYear();
+// const month = currentDate.getMonth() + 1; //JS count month from 0 for that months is 11 ,that is why you need to +1 for human understand
+// const day = currentDate.getDate();
+// const hours = currentDate.getHours();
+// const minutes = currentDate.getDate();
+// const miliseconds = currentDate.getMilliseconds();
+// console.log(year);
+// console.log(month);
+// console.log(day);
+// console.log(hours);
+// console.log(minutes);;
+// console.log(currentDate.toDateString());
+
+// //Date manipulation
+// const dateManipulate = new Date();
+// dateManipulate.setDate(dateManipulate.getDate() - 1);
+// console.log(dateManipulate)
+
+
 
 
 //+++++++++ Revise ++++++++++++++
