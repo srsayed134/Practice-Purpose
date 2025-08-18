@@ -204,12 +204,24 @@
 // let greet = "  i         am good persn";
 // console.log(sentCap(greet));
 
-const capitalize = (str) => {
-     return str
-     .toLowerCase()
-     .split(" ")
-     .map((word) => word[0].toUpperCase() + word.slice(1))
-     .join(" ");
-}
+// const capitalize = (str) => {
+//      return str
+//      .toLowerCase()
+//      .split(" ")
+//      .map((word) => word[0].toUpperCase() + word.slice(1))
+//      .join(" ");
+// }
  
-console.log(capitalize("this is not global"))
+// console.log(capitalize("this is not global"))
+
+//FizzBuzz
+// let random = 29;
+// if((random % 5 === 0) && (random % 3 === 0)){
+//     console.log(`${random} Fizzbuzz`)
+// }else if ((random % 5) === 0){
+//     console.log(`${random} Buzz`)
+// }else if ((random % 3) === 0){
+//     console.log(`${random} Fizz`)
+// }else{
+//     console.log(`${random} Nothing found`)
+// }
