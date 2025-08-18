@@ -53,7 +53,7 @@
 //    return arr[index];
 // }
 // console.log(getElement(numbers, 2))
-// //I specify index number in numbers 
+// //I specify index number in numbers
 
 //O(n^2) ++++++++++++++
 //Indicates that the algorithm's execution time grows quadratically with the size of the input data(represented by n)
@@ -149,7 +149,7 @@
 //     }
 //     return res;
 // }
-// let reverString = reverseString("Sayed") 
+// let reverString = reverseString("Sayed")
 // console.log(reverString);
 
 // function rev(str){
@@ -158,8 +158,8 @@
 // }
 // console.log(rev("Sayed"))
 
-// Palindromes
-// If the reverse string is equal to the original one then  that word is a palindrome 
+// Palindromes+++++++++++++
+// If the reverse string is equal to the original one then  that word is a palindrome
 
 // function reverse(str){
 //     let res = str.split("").reverse().join("");
@@ -169,3 +169,47 @@
 //     return `${res} is not valid palidram`
 // }
 // console.log(reverse("cddc"))
+
+//Reverse Integer+++++++++++++++++++++
+
+//There are lots of way to number to string
+//(num + ""), (num.toString()), (String(num)), (`${num}`);
+
+// function reverseInt(num){
+//     let num_str = num.toString();
+//     let str_arr_re_str = num_str.split("").reverse().join("");
+//     let str_num = parseFloat(str_arr_re_str);
+//     return str_num;
+// }
+// let num = 4565464988;
+// console.log(reverseInt(num));
+
+//Sentence Capitalization++++++++++++
+//This will work when there is valid word length
+
+
+// function sentCap(sen) {
+//   let sentence = sen.split(" "); //[ 'I', 'A', 'G', 'P' ]
+//   let sente = [];
+//   for (let i = 0; i < sentence.length; i++) {
+//     let word = sentence[i];
+//     if (word.length > 0) {
+//         let eachStr = word[0].toUpperCase() + word.slice(1).toLowerCase();
+//         sente.push(eachStr);
+//     }
+//   }
+//   return sente.join(" ");
+// }
+
+// let greet = "  i         am good persn";
+// console.log(sentCap(greet));
+
+const capitalize = (str) => {
+     return str
+     .toLowerCase()
+     .split(" ")
+     .map((word) => word[0].toUpperCase() + word.slice(1))
+     .join(" ");
+}
+ 
+console.log(capitalize("this is not global"))
