@@ -582,6 +582,36 @@
 // let vehicle1 = createVehicle("Sedan", "Crown", 2010);
 // console.log(vehicle1.year)
 
+//30: setInterval & setTimeout++++++++++
+
+// setInterval(() => {
+//     console.log("Every 3 second");
+// }, 2000);
+
+// const intervalId = setInterval(function () {
+//     console.log("This is being executed")
+// }, 1000);
+
+// setTimeout(() => {
+//     clearInterval(intervalId);
+//     console.log(`Stoped interval`)
+// }, 10000);
+
+// setTimeout(() => {
+//     console.log("This is from every 2 second")
+// }, 2000);
+
+// 32: Template Strings++++++++++++
+// function car(a, b){
+//     let start = a;
+//     let stop = b;
+
+//     return `The car have both ${start} and ${stop} `
+// }
+// console.log(car("gear", "break"));
+
+// console.log(`${["one", "two", "three"]}`); //one,two,three
+
 
 
 
