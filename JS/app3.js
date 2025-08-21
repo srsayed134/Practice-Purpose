@@ -610,7 +610,104 @@
 // }
 // console.log(car("gear", "break"));
 
-// console.log(`${["one", "two", "three"]}`); //one,two,three
+// console.log(`${["one", "two", "three"]}`); //one,two,three;
+
+//**Challenge */
+// let randomSen = `The quick
+// brown fox
+// jumps over
+// the lazy dog
+// `;
+
+// let firstName = "Lee";
+// let lastName = "Copper"
+// let fullName = `${firstName} ${lastName}`
+// console.log(fullName)
+
+// 33: Arrow Functions
+
+// const yourName = (a,b) => {
+//     return `This is your name ${a} ${b}`
+// }
+// console.log(yourName());
+
+//**Challenge */
+// setTimeout(() => {
+//     console.log("Hello");
+//     setTimeout(() => {
+//         console.log("Hey");
+//         setTimeout(() => {
+//             console.log("Namaste");
+//             setTimeout(() => {
+//                 console.log("Hi");
+//                 setTimeout(() => {
+//                     console.log("Bonjour")
+//                 }, 2000);
+//             }, 2000);
+//         }, 2000);
+//     }, 2000)
+// }, 2000)
+
+// 34: Enhanced Object Literals
+//This is a set of enhancements to the syntax for definig objects in JS. These enhancements make it more convenient and concise to define objec properties and methods
+
+// function user(name, age, works){
+//     return{
+//         name: name,
+//         age: age,
+//         works: works,
+//     }
+// }
+
+// const huxn = user("Huxn", 19, "Programmer");
+// console.log(huxn);
+
+// //This is object literels
+// function user1(name, age, works){
+//     return{
+//         name,
+//         age,
+//         works,
+//         intro: function(){
+//             return `My name is ${name}`
+//         }
+//     }
+// }
+
+// const sayed = user1("Sayed", 23, "Programmer");
+// console.log(sayed)
+// console.log(sayed.intro())
+
+//**Challenge */
+//1
+// const a = 1;
+// const b = 2;
+// const c = 3;
+
+// const obj = {
+//     a,
+//     b,
+//     c,
+// }
+// console.log(obj)
+
+//2
+// function lib(a, b){
+//     return{
+//         a,
+//         b,
+//         sum: function(){
+//            return a + b;
+//         },
+//         mult: function(){
+//            return a * b;
+//         }
+//     }
+// }
+
+// const Lib = lib(2, 3);
+// console.log(Lib.sum()); //5
+// console.log(Lib.mult()); //6
 
 
 
